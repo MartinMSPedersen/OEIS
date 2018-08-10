@@ -1,3 +1,5 @@
+#https://cran.r-project.org/web/packages/hashmap/README.html
+
 library(hashmap)
 
 in_a_interval <- function(v) {
