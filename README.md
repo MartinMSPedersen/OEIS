@@ -1,3 +1,3 @@
 # OEIS
 
-Various code to compute https://oeis.org/|OEIS sequences
+Various code to compute [OEIܴܴܴS sequences](https://www.oeis.org)
