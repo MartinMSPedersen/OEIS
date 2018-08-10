@@ -1,4 +1,4 @@
-#https://cran.r-project.org/web/packages/hashmap/README.html
+#https://cran.r-project.org/web/packages/hashmap/hashmap.pdf
 
 library(hashmap)
 
