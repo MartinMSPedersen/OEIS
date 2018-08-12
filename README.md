@@ -1,3 +1,3 @@
 # OEIS
 
-Various code to compute [OEIS sequences](https://www.oeis.org)
+Various code I use to plot and compute [OEIS sequences](https://www.oeis.org)
