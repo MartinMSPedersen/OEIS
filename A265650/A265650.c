@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <math.h>
 
-#define SIZE 1000
+#define SIZE 10000000
 
 unsigned int numbers[SIZE];
 
@@ -27,7 +27,7 @@ int main() {
 			numbers[next]=next_circle_number;
 			next_circle_number++;
 		}
-		printf(", %u", numbers[next]); 
+		printf("\n%u", numbers[next]); 
 		next++;
 	}
 	printf("\n");
