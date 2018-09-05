@@ -1,6 +1,8 @@
 #https://cran.r-project.org/web/packages/hashmap/hashmap.pdf
 #library(hashmap)
 
+SIZE <- 80000
+DEBUG <- TRUE
 
 in_a_interval <- function(v) {
 	for (interval in intervals) {
@@ -57,15 +59,16 @@ add_value(0)
 step <- 1
 value <- 0
 
-cat("0 0\n")
-while (step < 80000) {
+if (DEBUG) cat("0 0\n")
+while (step < SIZE) {
 	if ((value-step>0) && (!in_a_interval(value-step))) {
 		value <- value - step
 	} else {
 		value <- value + step
 	}
 	add_value(value)
-	cat(step,value,"\n")
+	if (DEBUG) cat(step,value,"\n")
 	step <- step + 1
 }
 
+cat(step, value, "\n")
