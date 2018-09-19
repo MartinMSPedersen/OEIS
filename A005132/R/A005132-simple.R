@@ -2,12 +2,12 @@
 #library(hashmap)
 
 DEBUG <- TRUE
-SIZE <- 80000
+SIZE <- 800000
 
-visited <- vector('logical', 500000)
+visited <- vector('logical', 1e8)
 
 in_a_interval <- function(v) {
-	visited[[v+1]]
+	visited[[v+1]] 
 }
 
 add_value <- function(v) {
