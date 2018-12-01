@@ -6,12 +6,16 @@ record <- 0
 p1 <- 2
 
 i <- 1
-while(p1<1e9) {
-  p2 <- nextprime(p1)
+
+setwd("OEIS/A290000")
+while(TRUE) {
+  p2 <- nextprime(p1) 
   if (p2-p1 > record) {
+    sink("b290000", append = TRUE)
     cat(i,as.character(p1),"\n")
     i <- i + 1
     cat(i,as.character(p2),"\n")
+    sink()
     i <- i + 1
     record <- (p2-p1)
   }
