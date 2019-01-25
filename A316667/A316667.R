@@ -85,19 +85,19 @@ knightMoves <- function(x, y) {
 pos <- list(x = 0, y = 0)
 usedValues <- 1
 
-print(paste("1",usedValues))
+cat("1 ",usedValues,"\n", sep = "")
 while (TRUE) {
   spiralValue(pos$x, pos$y)
   candidates <- setdiff(knightMoves(pos$x, pos$y),usedValues)
   if (length(candidates) == 0) break
   nextValue <- min(candidates)
   usedValues <- c(usedValues,nextValue)
-  print(paste(length(usedValues),nextValue))
+  cat(length(usedValues)," ",nextValue,"\n", sep = "")
   pos <- spiralCoordinates(nextValue)
 }
 
  
-# for (x in 5:-5) {
+# for (x in 5:-5) { 
 #   for (y in -5:5) {
 #     cat(sprintf("%2d ",spiralValue(x,y)))
 #   }
