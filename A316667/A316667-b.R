@@ -1,4 +1,4 @@
-# computing A316667
+# computing various sequences based on A316667
 cacheY <- NULL
 cacheX <- NULL
 
@@ -83,7 +83,9 @@ knightMoves <- function(x, y) {
  
 
 print("n len last max")
-for (startValue in 1:10000) {
+startValue <- 0
+while (TRUE) {
+  startValue <- startValue + 1
   pos <- spiralCoordinates(startValue)
   usedValues <- spiralValue(pos$x, pos$y)
   
