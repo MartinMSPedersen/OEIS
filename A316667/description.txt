@@ -1,0 +1,1 @@
+Squares visited by knight moves on a spirally numbered board and moving to the lowest available unvisited square at each step.
