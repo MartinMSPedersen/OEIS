@@ -1,4 +1,6 @@
 #https://oeis.org/A228474
+#more complicated code.
+#a lot slower than the simple version but uses less memory
 
 SIZE <- 8000
 
