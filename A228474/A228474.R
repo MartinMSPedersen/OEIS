@@ -2,7 +2,7 @@
 #more complicated code.
 #a lot slower than the simple version but uses less memory
 
-SIZE <- 8000
+SIZE <- 180000
 
 in_a_interval <- function(v) {
 	for (interval in intervals) {
@@ -54,7 +54,7 @@ add_value <- function(v) {
 }
 
 #intervals <- list(c(low = 0, high = 0))
-start_value <- 0
+start_value <- 55041
 
 while (start_value < SIZE) {
 	value <- start_value

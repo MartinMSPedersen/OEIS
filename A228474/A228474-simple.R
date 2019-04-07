@@ -1,11 +1,11 @@
 #https://oeis.org/A228474
 # simple and faster version but uses a lot of memory
 
-SIZE <- 8000
+SIZE <- 100001
 DEBUG <- FALSE
 
-visited_positive <- vector('logical', 1e8)
-visited_negative <- vector('logical', 1e8)
+visited_positive <- vector('logical', 1e9)
+visited_negative <- vector('logical', 1e9)
 
 in_a_interval <- function(v) {
 	if (v > 0) { return(visited_positive[[v]]) }
@@ -19,9 +19,13 @@ add_value <- function(v) {
 }
 
 
-start_value <- 0
+start_value <- 55033
 
 while (start_value < SIZE) {
+	if (start_value %in% c(11281, 22044, 36618, 42570, 55029)) {
+		start_value <- start_value + 1
+		next
+	}
 	value <- start_value
 	step <- 0
 	visited_positive <- vector('logical', 1e8)
