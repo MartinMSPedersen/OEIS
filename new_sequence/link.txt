@@ -1,0 +1,5 @@
+http://ntheory.org/pseudoprimes.html
+
+X^2-3*x-5
+#Frob(3, -5)
+https://en.wikipedia.org/wiki/Frobenius_pseudoprime
